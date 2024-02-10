@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_05_cent'])) {
 
         // Open the file for writing and save the new value
         file_put_contents($filePath, $newValue);
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
 
         // Display success message
 //        echo "Value successfully updated to $newValue";
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_10_cent'])) {
 
         // Open the file for writing and save the new value
         file_put_contents($filePath, $newValue);
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
 
         // Display success message
   //      echo "Value successfully updated to $newValue";
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_25_cent'])) {
 
         // Open the file for writing and save the new value
         file_put_contents($filePath, $newValue);
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
 
         // Display success message
     //    echo "Value successfully updated to $newValue";
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_1_dollar'])) {
 
         // Open the file for writing and save the new value
         file_put_contents($filePath, $newValue);
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
 
         // Display success message
       //  echo "Value successfully updated to $newValue";
@@ -132,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sub_05_cent'])) {
 
         // Open the file for writing and save the new value
         file_put_contents($filePath, $newValue);
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
 
         // Display success message
         //echo "Value successfully updated to $newValue";
@@ -155,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sub_10_cent'])) {
 
         // Open the file for writing and save the new value
         file_put_contents($filePath, $newValue);
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
 
         // Display success message
        // echo "Value successfully updated to $newValue";
@@ -179,7 +179,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sub_25_cent'])) {
 
         // Open the file for writing and save the new value
         file_put_contents($filePath, $newValue);
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
 
         // Display success message
         //echo "Value successfully updated to $newValue";
@@ -205,7 +205,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sub_1_dollar'])) {
         file_put_contents($filePath, $newValue);
 
        //This will redirect to helen_view to prevemt a resubmittion error.
-       header("Location:http://192.168.0.111/Roe_Bank/redirect.php");
+       header("Location:http://(Enter Server Here)/redirect.php");
        
         // Display success message
         //echo "Value successfully updated to $newValue";
@@ -220,9 +220,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sub_1_dollar'])) {
 
 // Replace these variables with your MySQL database credentials
 $host = '127.0.0.1';
-$user = 'roeweb';
-$pass = '^D*^C7Â¡Vamos!^C';
-$db   = 'roeweb';
+$user = 'MySQL username here';
+$pass = 'MySQL Password here';
+$db   = 'database name here';
 
 // Create a connection
 $conn = new mysqli($host, $user, $pass, $db);
